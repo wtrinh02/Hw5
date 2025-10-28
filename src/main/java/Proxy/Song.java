@@ -23,4 +23,8 @@ public class Song {
         return album;
     }
 
+    public String toString(){
+        return "Title: " + title + ", Album: " + album;
+    }
+
 }
