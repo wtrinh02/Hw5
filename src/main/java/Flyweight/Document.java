@@ -13,6 +13,11 @@ public class Document {
         this.characterPropertiesFactory = characterPropertiesFactory;
     }
 
+
+    public List<Character> getDisplayedCharacters() {
+        return displayedCharacters;
+    }
+
     public void addCharacter(char character, String font, String color, String size) {
         Font characterFont = characterPropertiesFactory.getFont(font);
         Color characterColor = characterPropertiesFactory.getColor(color);

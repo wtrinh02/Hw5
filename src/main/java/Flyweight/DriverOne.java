@@ -65,7 +65,7 @@ public class DriverOne {
         }catch(Exception e){
             System.out.println(e);
         }
-
+        System.out.println("------------------------------------------");
         //Loading Documents
 
         try{
@@ -88,6 +88,12 @@ public class DriverOne {
             loadedDocument4.loadDocument("Variation4.txt");
             System.out.println("Loaded document 4: ");
             loadedDocument4.displayDocument();
+
+            System.out.println("------------------------------------------");
+            loadedDocument4.changeCharacterProperties(0,"Arial","Blue","14");
+            System.out.println("Changed document 4 1st character Properties: ");
+            loadedDocument4.displayDocument();
+            loadedDocument4.saveDocument("Variation4.txt");
         }
         catch(Exception e){
             System.out.println(e);
