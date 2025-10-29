@@ -1,5 +1,6 @@
 package FlyweightTests;
 import Flyweight.CharacterPropertiesFactory;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import Flyweight.Color;
@@ -11,7 +12,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CharacterPropertiesFactoryTests {
 
 
-    CharacterPropertiesFactory characterPropertiesFactory = new CharacterPropertiesFactory();
+    CharacterPropertiesFactory characterPropertiesFactory;
+    @BeforeEach
+    public void setUp(){
+        characterPropertiesFactory = new CharacterPropertiesFactory();
+    }
 
     @Test
     public void testGetFontCreatesInstance() {

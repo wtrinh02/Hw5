@@ -47,4 +47,16 @@ public class ProxyService implements SongService{
         cacheByAlbum.put(album, foundSongs);
         return foundSongs;
     }
+
+    public HashMap<Integer, Song> getCacheById() {
+        return cacheById;
+
+    }
+    public HashMap<String, List<Song>> getCacheByTitle() {
+        return cacheByTitle;
+    }
+    public HashMap<String, List<Song>> getCacheByAlbum() {
+        return cacheByAlbum;
+    }
+
 }
