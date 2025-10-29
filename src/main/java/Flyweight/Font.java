@@ -8,8 +8,8 @@ public class Font {
         this.fontName = fontName;
     }
 
-    public Font getFont() {
-        return new Font(fontName);
+    public String getFont() {
+        return fontName;
     }
 
 }
